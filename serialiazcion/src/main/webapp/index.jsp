@@ -9,16 +9,29 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Reproductor de Videos</title>
+    <title>Spotifyyy</title>
     <style>
-        body {
-            background-color: #1DB954;
-            color: #ffffff;
-            font-family: Arial, sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kaushan+Script&family=Oswald:wght@700&family=Sedgwick+Ave+Display&family=Ultra&display=swap');        body {
+            color: #ffffff;            
             margin: 0;
-            padding: 0;
+            padding: 0;        
+            background: linear-gradient(55deg, #d0177e, #652dc1, #a10684, #1C0141);
+            background-size: 300% 300%;
+            animation: gradientBackground 20s linear infinite;
         }
 
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+        
         h1 {
             font-size: 36px;
             text-align: center;
@@ -54,41 +67,70 @@
         }
         
         /* ESTILO PARA LOS BOTONES*/
-         a.button {
+        .button {
             text-decoration: none;
             color: #ffffff;
-            background-color: #21B01B;
-            padding: 10px 20px;
+            background-color: #4e3179;
+            padding: 20px;
             border-radius: 25px;
             font-weight: bold;
             transition: background-color 0.3s ease, transform 0.3s ease;
             display: inline-block;
+            /* Añade margen entre los botones */
+            margin: 50px; 
+            animation: logoColorChange 10s linear infinite;
+
         }
 
-        a.button:hover {
-            /* Cambia el color del boton */
-           background-color: #26C16E;
-           /* Cambia el tamaño al 105% al pasar el cursor */
-            transform: scale(1.05); 
+        .button:hover {
+            background-color: #1DB954;
+            transform: scale(1.05);
         }
-        /*para agregar el loguito arriba*/
-        .centered-logo {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 100%;
-    /* Ajusta el espacio vertical según tus necesidades */
-    padding-top: 20px; 
-}
+            /* Estilos para la imagen del logo que tenga movimientico y tales  */
+        .logo {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            max-width: 100%;
+            padding: 10px;
+            border-radius: 25px;
+            animation: logoColorChange 10s linear infinite;
+        }
+
+        @keyframes logoColorChange {
+            0% {
+                border: 2px solid #800080;
+                background-color: #4c2882;
+            }
+            25% {
+                border: 2px solid #1e2460;
+                background-color: #4A00E0;
+            }
+            50% {
+                border: 2px solid #800080;
+                background-color: #4c2882;
+            }
+            75% {
+                border: 2px solid #1e2460;
+                background-color: #a10684;
+            }
+            100% {
+                border: 2px solid #800080;
+                background-color: #4c2882;
+            }
+        }
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="https://thumbs.dreamstime.com/b/bot%C3%B3n-reproducir-sobre-fondo-p%C3%BArpura-y-azul-abstracto-multimedia-audio-v%C3%ADdeo-cine-musical-con-video-un-tri%C3%A1ngulo-ne%C3%B3n-172286733.jpg" alt="Logo de la página" class="centered-logo">
-        <h1>Reproductor de Videos</h1>
+        <img src="https://thedrum-media.imgix.net/thedrum-prod/s3/news/tmp/637022/playbutton.png?w=608&ar=default&fit=crop&crop=faces,edges&auto=format" 
+             alt="Logo" class="logo" width="300" heigth="300">       
+        <h1 style="font-family: 'Bungee', cursive; font-size: 30px; ">Reproductor de Videos</h1>    
         <ul>
-            <li><a href="agregarVideos.jsp"  class="button" >Ingresar un nuevo video </a></li>
-            <li><a href="listarVideo.jsp"  class="button" >Listar videos</a></li>
+            <a href="agregarVideos.jsp" class="button" >Ingresar un nuevo video</a>
+            <a href="listarVideo.jsp" class="button" >Listar videos</a>
+
         </ul>
     </div>
 </body>
