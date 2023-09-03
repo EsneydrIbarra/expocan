@@ -9,7 +9,7 @@
 <html>  
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Spotify</title>
+        <title>Spotifayer</title>
        <style>
            /*importamos la de khand para las letras que no son titulo*/
            @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kaushan+Script&family=Khand:wght@500&family=Oswald:wght@700&family=Sedgwick+Ave+Display&family=Ultra&display=swap');
@@ -21,9 +21,9 @@
             color: #ffffff;
             margin: 0;
             padding: 0;        
-            background: linear-gradient(200deg, #4c2882, #652dc1, #a10684, #1C0141);
+            background: linear-gradient(400deg, #800080, #4e0041, #4b0082, #652dc1, #42214b, #a10684, #1C0141);
             background-size: 300% 300%;
-            animation: gradientBackground 20s linear infinite;          
+            animation: gradientBackground 5s linear infinite;          
         }
 
         @keyframes gradientBackground {
@@ -31,10 +31,10 @@
                 background-position: 0% 50%;
             }
             50% {
-                background-position: 100% 50%;
+                background-position: 100% 60%;
             }
             100% {
-                background-position: 0% 50%;
+                background-position: 0% 60%;
             }
         }
         
@@ -185,9 +185,9 @@
         <img id="imagen-musica" src="https://estaticos.elcolombiano.com/binrepository/780x565/0c0/0d0/none/11101/EDTW/nostalgia-musica-1_42537840_20230605193530.jpg"
             alt="imagen">
         <img id="imagen-musica2" src="https://us.123rf.com/450wm/pitinan/pitinan2307/pitinan230729460/209505922-captura-sincera-de-una-emocionada-fiesta-de-una-joven-africana-con-auriculares-hermosa-generativa.jpg?ver=6"
-              alt="imagen">  
+              alt="imagen">
+        
        <h1 style="font-family: 'Bungee', cursive; font-size: 20px; position: absolute; top: -20px; left: 10px;">Reproductor de Videos</h1>
-
 
         <form action="svVideo" method = "POST">
         <h1 style="font-family: 'Bungee', cursive; font-size: 25px; ">Tu Selección de Videos</h1>    
@@ -214,10 +214,9 @@
             <textarea name = " letra " rows="5" placeholder="Escriba la letra del video"></textarea><br>
             <!-- div que usa la etiqueta para mover bien los botones y si funciono que ingeniero soy -->
             <div class="button-container">
-                <!-- use las clases del boton anterior pero aca y le puse la letra y a la de agg le puse tamaño paq empareje-->
-                <a href="index.jsp" class="button" class="button right" style="font-family: 'Khand', sans-serif;">Regresar</a>
-            <input style="font-family: 'Khand', sans-serif;font-size: 15px;" type="submit" value="Agregar Video" class="button" class="button left">
-            
+             <!-- use las clases del boton anterior pero aca y le puse la letra y a la de agg le puse tamaño paq empareje-->
+             <a href="index.jsp" class="button" class="button right" style="font-family: 'Khand', sans-serif;">Regresar</a>
+            <input style="font-family: 'Khand', sans-serif;font-size: 15px;" type="submit" value="Agregar Video" class="button" class="button left">            
             </div>
         </form> 
        

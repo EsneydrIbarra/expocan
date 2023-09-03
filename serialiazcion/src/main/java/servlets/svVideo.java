@@ -47,10 +47,11 @@ public class svVideo extends HttpServlet {
           misVideos.add(miVideo);
           
           //agregamos el arraylist al objetdo de solicitud como atributo
+          //request.setAttribute("misVideos", misVideos);
           request.setAttribute("misVideos", misVideos);
-          
           //redireccionar a la pagina web destino
-          request.getRequestDispatcher("listarVideo.jsp").forward(request, response);                         
+          request.getRequestDispatcher("listarVideo.jsp").forward(request, response);  
+          //request.getRequestDispatcher("listarVideo.jsp").forward(request, response);                         
     }
     @Override
     public String getServletInfo() 
