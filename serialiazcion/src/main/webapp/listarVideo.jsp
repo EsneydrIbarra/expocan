@@ -121,16 +121,13 @@
         
         <h1>Lista De Super Videos</h1>
         <div class="video-list">
-            ArrayList<Video> misVideos = (ArrayList<Video>) request.getAttribute("misVideos");
                     
     <%
         // Obtener el arraylist de la solicitud de la clase svVideo
-        //ArrayList<Video> misVideos = (ArrayList<Video>)request.getAttribute("misVideos");            
-        ArrayList<Video> misVideos = (ArrayList<Video>) request.getAttribute("misVideos");
+        ArrayList<Video> misVideos = (ArrayList<Video>)request.getAttribute("misVideos");            
         // Mostrar los datos del array                                   
-        for (Video v : misVideos) {
-// for (Video v: misVideos)
-        //{
+        for (Video v: misVideos)
+        {
     %>
     <!-- Le cambie lo que estaba hecho con out.println para que se me haga mas facil
     manejar los margenes de los titulos y lo que estos progseguian a contener, hecho esto con 

@@ -222,7 +222,7 @@
             <input type = " text " name="url" placeholder="Escriba la URL del video"><br>
             
             <label for = "letra">Letra</label>
-            <textarea name = " letra " rows="5" placeholder="Escriba la letra del video"></textarea><br>
+            <textarea type = "text " name="letra" rows="5" placeholder="Escriba la letra del video"></textarea>
             <!-- div que usa la etiqueta para mover bien los botones y si funciono que ingeniero soy -->
             <div class="button-container">
              <!-- use las clases del boton anterior pero aca y le puse la letra y a la de agg le puse tamaño paq empareje-->
