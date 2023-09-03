@@ -13,6 +13,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Spotifayer</title>   
         <style>
+            /*EN ESTA DOCUMENTACION SE INCLUIRA LA ESTRUCTURA HTML DE ESTA CLASE LISTARVIDEO.JSP*/
             /*importamos la de khand para las letras que no son titulo*/
            @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kaushan+Script&family=Khand:wght@500&family=Oswald:wght@700&family=Sedgwick+Ave+Display&family=Ultra&display=swap');
            /*importada la fuente de bungee para los titulos*/
@@ -131,6 +132,9 @@
 // for (Video v: misVideos)
         //{
     %>
+    <!-- Le cambie lo que estaba hecho con out.println para que se me haga mas facil
+    manejar los margenes de los titulos y lo que estos progseguian a contener, hecho esto con 
+    las etiquetas "txt" llamadas-->
     <div class="video-item">
     <p><strong>ID del Video</strong></p>
     <div class="txt-itemID" class="video-data"><%= v.getIdVideo() %></div>
@@ -150,6 +154,7 @@
     <%
         }
     %>
+    <!-- botoncito agregar videos-->
     <a href="agregarVideos.jsp">Regresar</a>
 </div>
     </body>

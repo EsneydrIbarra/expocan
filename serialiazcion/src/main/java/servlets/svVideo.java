@@ -32,7 +32,7 @@ public class svVideo extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException 
     {
-     //aqui se envian los atributos pq se cambian los datos
+     //aqui se envian los atributos porque se cambian los datos
       String idVide = request.getParameter("idVideo");
       String titulo = request.getParameter("titulo");
       String autor = request.getParameter("autor");
@@ -59,6 +59,7 @@ public class svVideo extends HttpServlet {
         return "Short description";
     }
 } 
+//esto no lo quise borrar porque quiza me serviria de algo
 /** System.out.println("idVideo: "+ idVide);
         System.out.println("titulo: "+ titulo);
         System.out.println("autor: "+ autor);

@@ -6,7 +6,7 @@ package com.umariana.mundo;
  */
 public class Video {
     
-    //atributos
+    //creamos los atributos
     private int idVideo;
     private String titulo;
     private String autor;
@@ -18,7 +18,7 @@ public class Video {
     public Video() {
     }
 
-    
+    //creamos el constructor
     public Video(int idVideo, String titulo, String autor, String anio, String categoria, String url, String letra) {
         this.idVideo = idVideo;
         this.titulo = titulo;
@@ -28,7 +28,7 @@ public class Video {
         this.url = url;
         this.letra = letra;
     }
-
+    // creamos los getters ands setters
     public int getIdVideo() {
         return idVideo;
     }

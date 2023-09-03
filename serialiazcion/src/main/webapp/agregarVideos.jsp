@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Spotifayer</title>
        <style>
+           /*EN ESTA DOCUMENTACION SE INCLUIRA LA ESTRUCTURA HTML DE ESTA CLASE AGREGARVIDEOS.JSP*/
            /*importamos la de khand para las letras que no son titulo*/
            @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kaushan+Script&family=Khand:wght@500&family=Oswald:wght@700&family=Sedgwick+Ave+Display&family=Ultra&display=swap');
            /*importada la fuente de bungee para los titulos*/
@@ -123,12 +124,13 @@
 
         /* Clases para controlar la ubicación de los botones */
         .left {
-            margin-right: auto; /* Empuja el botón "Regresar" hacia la izquierda */
-            
+            /* Empuja el botón "Regresar" hacia la izquierda */ 
+            margin-right: auto;         
         }
 
         .right {
-            margin-left: auto; /* Empuja el botón "Agregar" hacia la derecha */
+            /* Empuja el botón "Agregar" hacia la derecha */
+            margin-left: auto; 
         }
 
         /* Contenedor flexbox para alinear los botones horizontalmente */
@@ -144,19 +146,23 @@
         /* Aplica una animación de movimiento */
         @keyframes moveUpDown {
             0% {
-                transform: translateY(-10px); /* Mueve la imagen hacia arriba */
+                /* Mueve la imagen hacia arriba */
+                transform: translateY(-10px); 
             }
             50% {
-                transform: translateY(10px); /* Mueve la imagen hacia abajo */
+                /* Mueve la imagen hacia abajo */
+                transform: translateY(10px); 
             }
             100% {
-                transform: translateY(-10px); /* Mueve la imagen hacia arriba nuevamente */
+                /* Mueve la imagen hacia arriba nuevamente */
+                transform: translateY(-10px); 
             }
         }
 
         /* Aplica la animación a la imagen */
         #imagen-musica {
-            animation: moveUpDown 4s ease infinite; /* Repite la animación de forma infinita */
+             /* Repite la animación de forma infinita */
+            animation: moveUpDown 4s ease infinite;
             max-width: 200px;
             height: 200px;
             /*mueve la imagen hacia abajo*/
@@ -168,15 +174,20 @@
             /*  ayudar a que el texto se mantenga alrededor de la imagen y no arriba o debnajo o mal ubnicada */      
             float: left;
             border-radius: 25px;
-
         }
         #imagen-musica2 {            
-            animation: moveUpDown 4s ease infinite; /* Repite la animación de forma infinita */
-            max-width: 220px; /* Ajusta el ancho máximo de la nueva imagen */
-            height: 200px; /* Mantén la proporción original de la imagen */
-            margin-top: 300px; /* Mueve la imagen hacia abajo */
-            margin-right: 80px; /* Mueve la imagen hacia la derecha */
-            float: right; /* Hace que la nueva imagen flote hacia la derecha */
+             /* Repite la animación de forma infinita */
+            animation: moveUpDown 4s ease infinite;
+            /* Ajusta el ancho máximo de la nueva imagen */
+            max-width: 220px; 
+            /* Mantén la proporción original de la imagen */
+            height: 200px; 
+             /* Mueve la imagen hacia abajo */
+            margin-top: 300px;
+            /* Mueve la imagen hacia la derecha */            
+            margin-right: 80px; 
+            /* Hace que la nueva imagen flote hacia la derecha */
+            float: right; 
             border-radius: 25px;
         }
     </style>

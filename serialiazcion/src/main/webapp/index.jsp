@@ -10,7 +10,10 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Spotifayer</title>
     <style>
-            @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kaushan+Script&family=Oswald:wght@700&family=Sedgwick+Ave+Display&family=Ultra&display=swap');        body {
+ /*EN ESTA DOCUMENTACION SE INCLUIRA LA ESTRUCTURA HTML DE ESTA CLASE INDEX.JSP*/
+ /*EL CODIGO ESTA HECHO TODO EN HTML USANDO CSS PERO EN LA MISMA CLASE, SIN CREAR UNA DE CSS ESPECIFICA
+ DEBIDO A QUE AUN NO HEMOS VISTO COMO SE HACE ESO EN LAS CLASES PERO CUANDO SEPA LO  HAGO PROFE TAMO*/
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=Kaushan+Script&family=Oswald:wght@700&family=Sedgwick+Ave+Display&family=Ultra&display=swap');        body {
             color: #ffffff;            
             margin: 0;
             padding: 0;        
@@ -110,11 +113,16 @@
         }   
         /*etiqueta para mover la imagen de musica inferior derecha*/
          #imagen {
-            position: fixed; /* Fija la posición */
-            bottom: 0; /* Lo coloca en la parte inferior */
-            right: 0; /* Lo coloca en el lado izquierdo */
-            width: 150px; /* Ancho de la imagen */
-            height: auto; /* Altura automática para mantener la proporción */
+            /* Fija la posición */
+            position: fixed;
+             /* Lo coloca en la parte inferior */
+            bottom: 0;
+             /* Lo coloca en el lado izquierdo */
+            right: 0;
+            /* Ancho de la imagen */
+            width: 150px; 
+            /* Altura automática para mantener la proporción */
+            height: auto; 
         }
     </style>
 </head>
