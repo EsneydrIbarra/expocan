@@ -190,6 +190,41 @@
             float: right; 
             border-radius: 25px;
         }
+        /* Estilo general del select */
+select {
+    padding: 10px; /* Ajusta el espaciado interior */
+    font-size: 16px; /* Ajusta el tamaño de fuente */
+    border: 2px solid #ccc; /* Agrega un borde */
+    border-radius: 5px; /* Borde redondeado */
+    color: #ffffff; /* Color del texto */
+     background: linear-gradient(200deg, #1C0141, #a10684, #652dc1, #4c2882);
+            background-size: 300% 300%;
+            animation: gradientBackground 2s linear infinite;
+}
+
+/* Estilo cuando el select está enfocado */
+select:focus {
+    background: linear-gradient(200deg, #1C0141, #a10684, #652dc1, #4c2882);
+            background-size: 300% 300%;
+            animation: gradientBackground 2s linear infinite;
+}
+
+/* Estilo para las opciones del select */
+select option {
+    background: linear-gradient(200deg, #1C0141, #a10684, #652dc1, #4c2882);
+    background-size: 300% 300%;
+    animation: gradientBackground 2s linear infinite;
+    background-color: #9a95da; /* Color de fondo de las opciones */
+    color: #ffffff; /* Color del texto de las opciones */
+}
+
+/* Estilo para las opciones cuando se pasa el mouse por encima */
+select option:hover {
+    background: linear-gradient(200deg, #1C0141, #a10684, #652dc1, #4c2882);
+    background-size: 300% 300%;
+    animation: gradientBackground 2s linear infinite;    
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
     </style>
     </head>
     <body>
@@ -216,8 +251,14 @@
             <input type = " text " name="anio" placeholder="Escriba el año del video"><br>
             
             <label for = "categoria" >Categoria</label>
-            <input type = " text " name="categoria" placeholder="Escriba la categoría del video"><br>
-            
+            <select type = " text " name="categoria" placeholder="Escriba la categoría del video"><br>           
+                    <option value="Salsa">Salsa</option>                    
+                    <option value="Hip-Hop">Hip-Hop</option>
+                    <option value="Rock">Rock</option>
+                    <option value="Pop">Pop</option>
+                    <option value="Vallenato">Vallenato</option>                    
+
+            </select>            
             <label for = "url">URl</label>
             <input type = " text " name="url" placeholder="Escriba la URL del video"><br>
             
